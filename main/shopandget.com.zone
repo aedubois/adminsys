@@ -11,6 +11,6 @@ shopandget.com       IN     SOA   main.shopandget.com.   shopandget.com. (
                             NS    main.shopandget.com.    ; primary master (authoritative)
 
 $ORIGIN shopandget.com.
-main                 IN     A     10.0.1.5                ; main ns
+main                 IN     A     10.0.1                  ; main ns
 login                IN     A     10.0.1.7                ; login ns
 
