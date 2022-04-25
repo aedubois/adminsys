@@ -1,0 +1,23 @@
+$ORIGIN shopandget.com.
+$TTL 86400           ; 1 day
+shopandget.com       IN     SOA   main.shopandget.com.    adminsys.shopandget.com. (
+                                  2001062501 ; serial
+                                  3600       ; refresh after 1 hour
+                                  600        ; retry after 10 minuts
+                                  604800     ; expire after 1 week
+                                  86400      ; minimum TTL of 1 day
+                                  )
+                                  
+             NS   main.shopandget.com.       ; primary master (authoritative)
+             NS   login.shopandget.com.      ; secondary master (idem)
+
+             IN     A       10.0.1.5
+
+server1      IN     A       10.0.1.5
+server2      IN     A       10.0.1.7
+dns1         IN     A       10.0.1.2
+dns2         IN     A       10.0.1.3
+
+ftp          IN     CNAME   server1
+www          IN     CNAME   server2
+
