@@ -1,3 +1,4 @@
+; for 10.0.1.0/16
 $ORIGIN shopandget.com.
 $TTL 86400           ; 1 day
 shopandget.com       IN     SOA   main.shopandget.com.   shopandget.com. (
