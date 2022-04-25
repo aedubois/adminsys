@@ -4,7 +4,7 @@
             $username = $_POST["username"];
             $login = $_POST["login"];
             if(strcmp($username, "John") && strcmp($login, "Doe"))
-                header("Location: http://login.shopandget.com");
+                header("Location: http://shopandget.com");
                 die;
         ?>
     </body>
