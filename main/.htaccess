@@ -1,0 +1,13 @@
+<Limit GET>
+order deny,allow
+deny from all
+allow from subdomain.domain.com
+</Limit>
+RewriteEngine On
+RewriteCond "%{HTTP_REFERER}" "!loginandgo.com"
+RewriteRule ^ http://loginandgo.com/ [R, L]
+
+
+<If "%{HTTP_HOST} != 'www.loginandgo.com'">
+Redirect / http://loginandgo.com/
+</If>
