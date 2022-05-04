@@ -1,7 +1,7 @@
 $ORIGIN shopandget.com.
 $TTL 86400           ; 1 day
 login.shopandget.com       IN     SOA   main.login.shopandget.com.   alexandre.dubois.shopanget.com (
-                                  2                    ; serial
+                                  2                             ; serial
                                   21600                         ; refresh after 6 hour
                                   3600                          ; retry after 1 hour
                                   604800                        ; expire after 1 week
