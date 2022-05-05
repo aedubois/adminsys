@@ -3,11 +3,7 @@ order deny,allow
 deny from all
 allow from login.shopandget.com
 </Limit>
-RewriteEngine On
-RewriteCond "%{HTTP_REFERER}" "!login.shopandget.com"
-RewriteRule ^ http://login.shopandget.com/ [R, L]
-
 
 <If "%{HTTP_HOST} != 'www.login.shopandget.com'">
-Redirect / http://login.shopandget.com/
+Redirect 302 http://shopandget.com http://login.shopandget.com
 </If>
